@@ -6,6 +6,7 @@
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-
+int _printneg(int n , char *bf);
+int _printint(const char *str);
 
 #endif

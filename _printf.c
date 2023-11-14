@@ -44,6 +44,15 @@ int _printf(const char *format, ...)
 				}
 				break;
 			}
+			case 'd':
+			case 'i':
+			{
+				int num = va_arg(types, int);
+				char nbf[12];
+				_printneg(num, nbf);
+				counter += _printint(nbf);
+				break;
+			}
 			case '%':
 			{
 				_putchar('%');
