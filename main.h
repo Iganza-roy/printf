@@ -8,5 +8,6 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 void _int(int num, int *count);
 int _printint(const char *str);
+void _binary(unsigned int n);
 
 #endif
