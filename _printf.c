@@ -10,6 +10,7 @@ int _printf(const char *format, ...)
 {
 	va_list types;
 	int counter = 0;
+	int i;
 
 	va_start(types, format);
 
@@ -48,10 +49,22 @@ int _printf(const char *format, ...)
 			case 'i':
 			{
 				int num = va_arg(types, int);
-				char nbf[12];
-				_printneg(num, nbf);
-				counter += _printint(nbf);
+
+				char j[12];
+				int l;
+
+				if (num < 0)
+					l = _printneg(num, j);
+				else
+					l = _printint(j);
+
+				for (i = 0; i < l; i++)
+				{
+					_putchar(j[i]);
+					counter++;
+				}
 				break;
+				
 			}
 			case '%':
 			{
