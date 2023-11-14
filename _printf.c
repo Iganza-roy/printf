@@ -2,9 +2,9 @@
 
 
 /**
- * _printf - ...
- * @format: ...
- * Return: ...
+ * _printf - simplified version of printf
+ * @format: constant number of variables expected
+ * Return: number of values printed
  */
 int _printf(const char *format, ...)
 {

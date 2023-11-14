@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _printint - ....
- * @str: ...
- * Return: ..
+ * _printint - prints integer value
+ * @str: string pointer
+ * Return: number of values printed
  */
 int _printint(const char *str)
 {
@@ -18,10 +18,10 @@ int _printint(const char *str)
 }
 
 /**
- * _printneg - ....
- * @n: ...
- * @bf: ...
- * Return: ...
+ * _printneg - checks and prints if number is negative
+ * @n: par 1
+ * @bf: par 2
+ * Return: 
  */
 int _printneg(int n, char *bf)
 {
