@@ -6,7 +6,7 @@
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-int _printneg(int n , char *bf);
+void _int(int num, int *count);
 int _printint(const char *str);
 
 #endif

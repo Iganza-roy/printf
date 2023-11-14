@@ -44,6 +44,46 @@ int _printf(const char *format, ...)
 				}
 				break;
 			}
+			case 'd':
+			case 'i':
+			{
+				int num = va_arg(types, int);
+				int div = 1;
+				int numcpy = num;
+
+				if (num < 0)
+				{
+					_putchar('-');
+					num = -num;
+					counter++;
+				}
+
+				if (num == 0)
+				{
+					_putchar('0');
+					counter++;
+				}
+				else
+				{
+					while (numcpy >= 10)
+					{
+						numcpy /= 10;
+						div *= 10;
+					}
+				}
+
+				numcpy = num;
+				while (div > 0)
+				{
+					int dig = numcpy / div;
+
+					_putchar('0' + dig);
+					counter++;
+					numcpy -= dig * div;
+					div /= 10;
+				}
+				break;
+			}
 			case '%':
 			{
 				_putchar('%');
