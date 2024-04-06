@@ -13,4 +13,4 @@ printf ( "formatted_string", arguments_list);
 **arguments_list:** These are the variable names corresponding to the format specifier.
 ### Return Value
 ```printf()``` returns the number of characters printed after successful execution.
-If an error occurs, a negative value is returned.
+If an error occurs, a negative value is **returned.**
