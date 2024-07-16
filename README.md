@@ -1,4 +1,4 @@
-<div>
+<div align="center">
 # Printf
 
 This is a collaborative project on a custom printf function
